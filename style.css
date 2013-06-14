@@ -1,0 +1,166 @@
+body {
+  font-family: futura;
+  margin: 0 0;
+}
+
+#detail-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(img/detail-bg-blur.jpg);
+  background-size: cover;
+}
+
+#culture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#culture #close {
+  position: absolute;
+  top     : 580px;
+  left    : 50%;
+  margin-left: -50px;
+  width: 100%;
+  font-size: 30px;
+  color: #5aaa6c;
+  text-decoration: none;
+  font-family: sans-serif;
+  display: none;
+  text-shadow: 0px 2px rgba(0,0,0,0.25);
+}
+
+#culture #close:hover {
+  color: white;
+}
+
+
+#nav-detail {
+  padding: 0 0;
+}
+
+#nav-detail li {
+  display: block;
+  list-style: none;
+  padding: 8px 20px;
+  width: 150px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#nav-detail a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+.nav-sel {
+  background: #5aaa6c;
+}
+
+.item-heading {
+  font-size   : 2.8em;
+  text-shadow : 2px 2px rgba(0,0,0,0.25);
+  color       : #5aaa6c;
+  text-align  : center;
+  margin-top  : 45px; 
+}
+
+.item {
+  border-radius      : 100%;
+  cursor             : pointer;
+  border             : 10px solid #5aaa6c;
+  position           : absolute;
+  box-shadow         : 0 2px 2px rgba(0,0,0,0.25);
+  -webkit-transition : width 1s, height 1s, top 1s, left 1s;
+}
+
+.item-subheading {
+  display: none;
+  width: 340px;
+  color: white;
+  position: absolute;
+  left: 200px;
+  top: 30px;
+}
+
+.item-copy {
+  display: none;
+  color: white;
+  text-transform: italic;
+  width: 500px;
+  font-weight: 100;
+  position: absolute;
+  top: 175px;
+}
+
+.item-map {
+  display: none;
+  position: absolute;
+  top: 300px;
+  height: 200px;
+}
+
+#nav ul {
+  padding: 0 0;
+  display: inline-block;
+  width: 160px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -80px;
+  -webkit-transition: margin-top 1s;
+}
+
+#nav li {
+  list-style: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  font-size: 1em;
+  -webkit-transition: background 1s;
+}
+
+#nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.selected { 
+  background: rgba(90,170,108,0.8);
+  font-size: 1.2em;
+}
+
+.city {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  z-index: -1;
+}
+
+#chicago {
+  background: purple;
+}
+
+#dallas {
+  background: blue;
+}
+
+#denver {
+  background: red;
+}
+
+#new-york {
+  background: green;
+}
+
+#los-angeles {
+  background: gray;
+}
